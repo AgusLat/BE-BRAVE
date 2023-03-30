@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: 'aereann_2regular';
+    src: url('/src/assets/static/fonts/aereann-2-webfont.woff2') format('woff2'),
+         url('/src/assets/static/fonts/aereann-2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-link{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    width: 10%;
+}
+
+.navbar-btn{
+    cursor: pointer;
+    border-style: none;
+    border-radius: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgb(28, 27, 27);
+    color: rgb(253, 253, 253);
+    
+    /* TODO: Seleccionar que propiedades transicionan antes o despues */
+    transition: all 0.5s; 
+    
+    transition-timing-function: ease-out;
+}
+
+.navbar-btn:hover{
+    cursor: pointer;
+    width: fit-content;
+    padding: 7%;
+    border-style: none;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    box-shadow: 0.1px 0.1px 7px 8px inset rgb(28, 27, 27)  ;
+    background-color: rgb(57, 61, 65);
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-family: 'aereann_2regular', 'Lucida Sans';
+    font-weight: bold;
+}
+
+.navbar-btn-active{
+   
+    width: fit-content;
+    padding: 7%;
+    border-style: none;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    box-shadow: 0.1px 0.1px 7px 8px inset rgb(28, 27, 27)  ;
+    background-color: rgb(57, 61, 65);
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-family: 'aereann_2regular', 'Lucida Sans';
+    font-weight: bold;
+    
+}
+
+
+#lang-btn{
+    display: flex;
+    width: 5%;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 3px 5px;
+    font-weight: bold;
+    background-color:rgb(28, 27, 27);
+    color:rgb(253, 253, 253);
+}
+
+#lang-icon{
+    align-self: center;
+    justify-self: center;
+    width: 20px;
+    padding: 0px 2px;
+    margin: 0px;
+
+}
+
+#lang-btn:hover{
+    text-shadow: 0px 0px 8px #c5f1ffc4
+}

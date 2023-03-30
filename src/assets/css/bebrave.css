@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'aereann_2regular';
+    src: url('/src/assets/static/fonts/aereann-2-webfont.woff2') format('woff2'),
+         url('/src/assets/static/fonts/aereann-2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#be-brave-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 7vh;
+    background-color:black;
+    height: 100%;
+    
+ 
+}
+
+
+#be-brave-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: space-around;
+    
+    width: 89vw;
+    height: 75%;
+    background-image: url('src/assets/static/img/23-Bright.png') ;
+    background-position: -20vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-self: flex-start;
+    margin-bottom: 2% ;
+    /* border: solid red; */
+    /* z-index: -1; */
+     
+    
+}
+
+#title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 30%;
+    margin: 5% ;
+    /* border: solid blue; */
+    
+}
+
+#iframe-container{
+
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 5%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    /* border: solid red; */
+}
+
+
+@keyframes title {
+    0% { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        word-spacing: 0em;
+        letter-spacing: 0.5em;
+        padding-left: 5%;
+        text-shadow: 0px 0px 20px #c5f1ff;
+        }
+    40% { color : black;
+          text-shadow: 0px 0px 0px black;
+          word-spacing: 0em;
+          letter-spacing: 0.5em; 
+          padding-left: 5%;}
+
+    
+    50% { color : black;
+        text-shadow: 0px 0px 0px black;
+        word-spacing: 0em;
+        letter-spacing: 0.2em; 
+        padding-left: 0%;}
+
+    100% { font-family: 'aereann_2regular', 'Lucida Sans';
+            letter-spacing: 0.2em;
+           font-weight: bold;
+           text-shadow: 0px 0px 50px #c5f1ff;
+      }
+      
+}
+#be-brave-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    font-size: 4rem;
+    line-height: 50%;
+    animation-name: title;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}
+
+#be-brave-subtitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: flex-start;
+    font-style: italic;
+    color: #c5f1ff79;
+    padding-left: 13%;
+    font-size: 1rem;
+    text-shadow: 0px 0px 6px #c5f1ff94;
+    
+}
+
+
+iframe{
+    margin: 20px;
+    border: solid rgba(240, 248, 255, 0.199) 3px ;
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px #50889971;
+}

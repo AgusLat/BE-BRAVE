@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'aereann_2regular';
+    src: url('/src/assets/static/fonts/aereann-2-webfont.woff2') format('woff2'),
+         url('/src/assets/static/fonts/aereann-2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+.mask-title{
+  -webkit-mask-image:linear-gradient( rgba(0,0,0,1) 80%, rgba(0, 0, 0, 0.800) 90%, rgba(0, 0, 0, 0) 95%);
+  mask-image:linear-gradient( rgba(0,0,0,1) 80%, rgba(0,0,0,0.800) 90%, rgba(0,0,0,0) 95%);
+
+}
+
+
+/* -----------SCROLLER CLASSES-------------- */
+
+/* WRAPPER (SCROLL CONTEXT) */
+.wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    height: 100vh;
+
+    
+}
+
+/* INSIDE WE PUT COMPONENTS IN PERSPECTIVE RELATIVE TO THIS PLANE */
+.reference-plane{
+  position: relative; 
+  display: flex;
+  flex-flow: row wrap ;
+  align-content: space-between;
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(10px);
+  z-index: -1;
+}
+
+/* BACKGROUND COMPONENT */
+.background-container{
+  position: absolute;
+  opacity: 0.7;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  transform: translateZ(-20px) scale(2.8); 
+/* EN TW, LA ESCALA ES 3 Y TP/TA ES 4 */
+
+  z-index: -1;
+}
+
+
+
+
+/* TITLE COMPONENT */
+.title-container{
+  transform: translateZ(-10px) scale(1);
+  width: 100%;
+  margin-top: 7vh;
+}
+
+
+
+/* SECTION COMPONENT */
+.sections-container{
+    display: flex;
+    margin: 5% 0%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* font-style: italic; */
+    transform: translateZ(-10px) scale(1);
+}
+/* --------------------------------------------- */
+
+
+
+
+.title-container h1{
+    position: absolute;
+    top: -2%;
+    left: 2%;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4vw;
+    text-shadow: 0px 0px 6px #c5f1ff;
+    letter-spacing: 2vw;
+}
+
+.title-container p {
+      position: absolute;
+      top: 2%;
+      right: 3%;
+      color: aliceblue;
+      font-family:  'aereann_2regular', 'Lucida Sans';
+      font-weight: bold;
+      font-size: 2vw;
+      text-shadow: 0px 0px 10px #c5f1ff;
+      letter-spacing: 2.4vw;
+}
+    
+.title-container img{
+      position: relative;
+      z-index: -1;
+}
+
+
+
+
+/* MODIFICAR EN TODAS LAS RESOLUCIONES CON LOS MEDIA QUERIES */
+@media screen and (max-width: 480px){
+    .background-container{
+        transform: translateZ(-20px) scale(3);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+    .background-container{
+        transform: translateZ(-20px) scale(4);
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .background-container{
+        transform: translateZ(-20px) scale(2.85);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    .background-container{
+        transform: translateZ(-20px) scale(2.85);
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1201px){
+    .background-container{
+        transform: translateZ(-20px) scale(2.85);
+    }
+}

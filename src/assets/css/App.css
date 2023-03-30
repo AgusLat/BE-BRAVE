@@ -1,0 +1,7 @@
+body{
+    /* display: flex; */
+    margin-top: 0px;
+    padding: 0px;
+    background-color: rgb(179, 155, 155);
+    overflow-x: hidden;
+}

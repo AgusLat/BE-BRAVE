@@ -1,0 +1,11 @@
+.navbar-container{
+    align-items: center;
+    background-color: rgb(28, 27, 27);
+    color: antiquewhite;
+    display: flex;
+    height: 7vh;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 4000;
+}
