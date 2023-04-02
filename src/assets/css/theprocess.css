@@ -81,7 +81,7 @@
     width: 40%;
     align-self: flex-start ;
     justify-content: center;
-    background-image: url('/src/assets/static/img/Adair1.jpg');
+    background-image: url('/images/Adair1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -163,10 +163,10 @@
 }
 
 @keyframes adair {
-    0%{background-image: url('/src/assets/static/img/Adair1.jpg');}
-    25%{background-image: url('/src/assets/static/img/Adair2.jpg');}
-    75%{background-image: url('/src/assets/static/img/Adair3.jpg');}
-    100%{background-image: url('/src/assets/static/img/Adair1.jpg');}
+    0%{background-image: url('/images/Adair1.jpg');}
+    25%{background-image: url('/images/Adair2.jpg');}
+    75%{background-image: url('/images/Adair3.jpg');}
+    100%{background-image: url('/images/Adair1.jpg');}
 }
 
 

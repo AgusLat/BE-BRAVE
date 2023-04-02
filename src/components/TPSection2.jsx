@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import { LangContext } from '../context/langContext'
-
+import backgroundImg1 from '../assets/static/img/Adair1.jpg'
+import img1 from '../assets/static/img/Adair4.jpg'
 
 
 
@@ -23,8 +24,8 @@ export const TPSection2 = ({section}) => {
 
     <div className='tpsection-container'>
       <div className='tpsection2'>
-        <div className={'tpsection2-inner1 ' + animation }>
-            <img src="/src/assets/static/img/Adair1.jpg" alt="" />
+        <div className={'tpsection2-inner1 ' + animation } >
+            <img src={backgroundImg1} alt="" />
             <button onClick={()=>{ animation===''? setAnimation('animation-adair'):setAnimation('')}}>
                  {animation===''?'PLAY':'STOP'} 
             </button>
@@ -37,7 +38,7 @@ export const TPSection2 = ({section}) => {
       </div>
         
       <div className='tpsection2-inner3'>
-        <img src="/src/assets/static/img/Adair4.jpg" alt="" />
+        <img src={img1} alt="" />
       </div>
       </div>
     </div>

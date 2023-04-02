@@ -116,7 +116,7 @@
 /* MODIFICAR EN TODAS LAS RESOLUCIONES CON LOS MEDIA QUERIES */
 @media screen and (max-width: 480px){
     .background-container{
-        transform: translateZ(-20px) scale(3);
+        transform: translateZ(-15px) scale(4);
     }
 }
 

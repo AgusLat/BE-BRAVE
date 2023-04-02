@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'aereann_2regular';
     src: url('/src/assets/static/fonts/aereann-2-webfont.woff2') format('woff2'),
@@ -33,7 +34,7 @@
     
     width: 89vw;
     height: 75%;
-    background-image: url('src/assets/static/img/23-Bright.png') ;
+    /* background-image: url('src/assets/static/img/23-Bright.png') ; */
     background-position: -20vw;
     background-repeat: no-repeat;
     background-size: 100%;

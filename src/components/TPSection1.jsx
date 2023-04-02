@@ -2,6 +2,8 @@ import React from 'react'
 import '../assets/css/theprocess.css'
 import { useContext } from 'react'
 import { LangContext } from '../context/langContext'
+import img1 from "../assets/static/img/Poster-TITLE.png"
+
 
 
 
@@ -20,7 +22,7 @@ export const TPSection1 = () => {
         'Despite the brutal punishment imposed on the deserters, Adair will seek to return to his lands to reconnect with his beloved.'}
          </p>
         </div>
-       <img src="/src/assets/static/img/Poster-TITLE.png" alt="" />
+       <img src={img1} alt="" />
     </div>
     </div>
   )
