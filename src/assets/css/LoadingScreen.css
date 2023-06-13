@@ -43,7 +43,7 @@ background-color: black;
     font-size: 3em;
     font-family: 'aereann_2regular';
     font-weight: bold;
-    
+    padding-right: 2%;
     animation-name: loading;
     animation-duration: 2s;
     animation-timing-function: linear;

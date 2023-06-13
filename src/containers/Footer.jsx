@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import '../assets/css/footer.css'
 import { DevInfoLinks } from '../components/DevInfoLinks'
 import { FooterLinks } from '../components/FooterLinks'
 
-export default function Footer() {
+export default forwardRef(function Footer(props,ref) {
+
+
   return (
     <>
-    <footer id='footer-container' className='footer-container'>
-       <FooterLinks />
+    <footer ref={ref} id='footer-container' className='footer-container'>
+      <FooterLinks />
       <DevInfoLinks />
     </footer>
     </>
   )
-}
+})

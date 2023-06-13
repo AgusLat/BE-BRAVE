@@ -6,7 +6,7 @@ import img3 from '../assets/static/logo/youtube-logo.png'
 
 export const FooterLinks = () => {
   return (
-    <ul>
+    <ul className='footer-ul'>
         <li>
             <a href="https://www.instagram.com/lamiracolo/" target="_blank">
                 <img className='logoimg' src={img1} alt="instagram logo" />
@@ -18,7 +18,7 @@ export const FooterLinks = () => {
             </a>
         </li>
         <li>
-            <a href="" target="_blank">
+            <a href="https://www.youtube.com/@lamiracolo6417" target="_blank">
                 <img className='logoimg' src={img3} alt="youtube logo" />    
             </a>
         </li>

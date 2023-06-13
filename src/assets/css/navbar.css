@@ -9,3 +9,10 @@
     width: 100%;
     z-index: 4000;
 }
+
+
+@media screen and (max-width: 480px){
+    .navbar-container{
+    justify-content: flex-end;
+    }
+}

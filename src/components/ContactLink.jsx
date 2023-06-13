@@ -1,11 +1,14 @@
 import React from 'react'
 import '../assets/css/navbutton.css'
 
-export default function ContactLink({name}) {
+
+export default function ContactLink({name, toFooterMethod}) {
+
+  
   return (
     <>
-    <a className='navbar-link' href="#footer-container">
-      <button className='navbar-btn'>
+    <a className='navbar-contact-link' >
+      <button id='contact-btn' className='navbar-btn' onClick={toFooterMethod} >
         {name}
         </button>
       </a>

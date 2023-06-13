@@ -25,11 +25,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
-    width: 70%;
-    background-color: rgba(25, 25, 25, 0.735);
-    border-radius: 1%;
-    box-shadow: 0px 0px 10px #000000 ;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 0%;
+    box-shadow: 0px 0px 20px  20px #000000a7 ;
+    
 }
 
 
@@ -43,28 +43,41 @@
     color: aliceblue;
 }
 
-.tpsection1 img{    
+.poster-img{    
     width: 40%;
-    margin: 5%;
-    box-shadow: 0px 0px 10px #000000 ;
+    margin: 5% 5% 5% 10%;
+    box-shadow: 0px 0px 40px 6px #ffffff6b ;
     border-radius: 1%;
     
+}
+
+.poster-img-mobile{
+    display: none;
 }
 
 .tpsection1 div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 40%;
-    padding: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.8vw;
-    text-shadow: 0px 0px 4px #c5f1ff;
-    
-    
+    width: 45%;
+    margin: 0% 10% 0% 0%;
+    font-family:monospace;
+    font-size: 1.7vw;
+    line-height: 2;
+    text-shadow: 0px 0px 3px #c5f1ff;
+    text-align: justify; 
 }
 
+.tpsection1 div p{
+    background-color: #000000bb;
+    padding: 7% 12% 7% 12%;
+    margin: 5% 0%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000000 ;
+
+  
+}
 
 
 
@@ -78,18 +91,20 @@
 
 .tpsection2-inner1{
     display: flex;
-    width: 40%;
-    align-self: flex-start ;
+    width: 25%;
+    align-self: center ;
     justify-content: center;
     background-image: url('/images/Adair1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-    margin: 5%;
-    box-shadow: 0px 0px 10px #000000; 
+    margin: 0% 5% 0% 10%;
+    box-shadow: 0px 0px 40px 6px #ffffff6b; 
     border-radius: 1%;
     
- 
+}
+.tpsection2-inner1-mobile{
+    display: none;  
 }
 
 .tpsection2-inner1 img{
@@ -97,47 +112,59 @@
     visibility: hidden;  
 }
 
-.tpsection2-inner1 button{
-    position: absolute;
-    align-self: flex-end ;
-    justify-self: center;
-    margin: 5%;
-    padding: 0.8% 0%;
+.tpsection2-inner1-mobile img{
+    width: 100%;
+    visibility: hidden;  
+}
 
+.tpsection2-mobile-btn{
+    display: none;
+}
+.tpsection2-btn{  
+    align-self: center ;
+    padding: 3% 3%;
+    width: 30%;
     box-shadow: 0px 0px 10px #ffffff; ;
     background-color: #00000098;
     border-style: none;
-    border-radius: 5%;
+    border-radius: 10px;
     color:aliceblue;
     cursor: pointer;
-    font-size: 2.5vw;
+    font-size: 1.7vw;
     font-family: 'aereann_2regular', 'Lucida Sans';
     font-weight: bold;
     text-shadow: 0px 0px 3px #c5f1ff;
     letter-spacing: 1vw;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
-.tpsection2-inner1 button:hover{
+.tpsection2-btn :hover{
     background-color: #30303098;
     text-shadow: 0px 0px 10px #c5f1ff;
-    box-shadow: 0px 0px 20px #ffffff; ;
-    transition: 0.5s;
-    font-size: 2.6vw;
+    box-shadow: 0px 0px 20px 10px #ffffff86; ;
+    transition: 0.8s;
+   
 
 }
 
 .tpsection2-inner2{
     display: flex;
     flex-direction: column;
-    width: 40%;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    width: 40%;
+    margin: 5% 10% 5% 0%;
+    padding: 3% 5%;    
+    border-radius: 5px;
     color: aliceblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.8vw;
-    text-shadow: 0px 0px 4px #c5f1ff;
+    font-family:monospace ;
+    font-size: 1.7vw;
+    line-height: 2;
+    text-shadow: 0px 0px 3px #c5f1ff;
+    text-align: justify;
+    background-color: #000000bb;
+    box-shadow: 0px 0px 10px #000000 ;
+
     
  
 }
@@ -145,9 +172,19 @@
 
 .tpsection2-inner3{
     
-    margin: 5%;
-    box-shadow: 0px 0px 10px #000000; 
-   
+    margin: 5% 10%;
+    box-shadow: 0px 0px 10px #ffffff; 
+    background-color: white;
+    font-family: monospace;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 1.7vw;
+    text-align: justify;
+    border-radius: 5px;
+}
+.tpsection2-inner3 p{
+    padding: 0% 10%;
+    text-shadow: 0px 0px 2px #000000;
 }
 
 .tpsection2-inner3 img{
@@ -178,12 +215,23 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     color: aliceblue;
-    font-size: 1.8vw;
-    margin: 5%;
-    background-color: rgba(0, 0, 0, 0);
-    text-shadow: 0px 0px 4px #c5f1ff;
+    font-size: 1.3vw;
+    margin: 5% 0%;
+    background-color: #000000bb;
+    text-shadow: 0px 0px 3px #c5f1ff;
+    box-shadow: 0px 0px 10px #000000; 
+
+   
+}
+
+.tpsection3-p{
+    margin: 4% 10%;
+    font-size: 1.7vw;
+    font-family: monospace;
+    line-height: 2;
+    text-align: justify;
 }
 
 
@@ -199,7 +247,8 @@
 }
 .tpsection3-inner1 img{
     display: inline-block;
-    width: 80%;
+    width: 75%;
+    padding-top: 5%;
     box-shadow: 0px 0px 10px #000000; 
     transition: 0.5s;
     
@@ -210,14 +259,15 @@
     border-style: none;
     cursor: pointer;
     border-radius: 25%;
-    width: 5%;
+    width: 10%;
     margin: 2.5%;
+    padding: 2%;
     height: auto;
     font-family: monospace;
     font-weight: bold;
     background-color: #0000004f;
     color: aliceblue;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     z-index: 5;
     text-shadow: 0px 0px 4px #c5f1ff;
     box-shadow:  0px 0px 5px #000000  ;
@@ -228,7 +278,7 @@
 .tpsection3-inner1 button:hover{
     background-color: #23292b;
     text-shadow: 0px 0px 2px #c5f1ff;
-    box-shadow:  0px 0px 15px #c5f1ff  ;
+    box-shadow:  0px 0px 15px #c5f1ff9b  ;
     
     transition: 1s;
     
@@ -243,17 +293,28 @@
 
 .dot{
     text-shadow: 0px 0px 2px #c5f1ff;
-    width: 5%;
+    width: 15%;
     transition: 1s;
-    color: rgb(128, 148, 152);
+    color: rgba(128, 148, 152, 0.833);
     cursor: pointer;
+    font-family: 'aereann_2regular';
+   
+    
+}
+
+p.dot{
+    font-size: 5vw;
+    line-height: 0.1;
+    letter-spacing: 3vw;
     
 }
 
 .selected{
-    text-shadow: 0px 0px 9px #ffffff;
+    text-shadow: 0px 0px 12px #ffffff;
     color: #ffffff;
     transition: 1s;
+    
+   
 }
 
 
@@ -262,16 +323,203 @@
     flex-direction: column;
     justify-content: center;
    align-items: center;
-   padding: 5%;
+   margin: 5% 0%;
    color: aliceblue;
    font-size: 1.5vw;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   text-shadow: 0px 0px 4px #c5f1ff;
+   font-family:Verdana, Geneva, Tahoma, sans-serif ;
+   text-shadow: 0px 0px 3px #c5f1ff;
+   background-color: #000000bb;
+   box-shadow: 0px 0px 10px #000000 ;
+
+}
+
+.tpsection4 p{
+    width: 80%;
+    margin-bottom: 4%;
+    font-family: monospace;
+    line-height: 2;
+    font-size: 2vw;
+   
+}
+
+.tpsection4 video{
+    width: 75%;
+    box-shadow: 0px 0px 10px #000000 ;
+    margin: 4% 0%;
+   
 }
 
 
-.tpsection4 video{
-    width: 80%;
-    box-shadow: 0px 0px 10px #000000 ;
+@media screen and (max-width: 480px){
+
+    .mobile-not-active{
+        display: none;
+    }
+
+    .tpsection-container{
+        width: 100%;
+        margin: 5% 0%;
+        
+    }
+    
+
+    
+    .tpsection1 div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+        font-family:monospace ; 
+        /* PROBAR FUENTE, ORIGINAL DE TODA LA PAGINA ES VERDANA */
+        font-size: 1.7vw;
+        text-shadow: 0px 0px 3px #c5f1ff;
+        text-align: justify; 
+    }
+
+    .tpsection1 div p{
+        margin: 0%;
+        padding: 15% 10%;
+        font-size: 6vw;
+        line-height: 2;
+        background-color: #00000070;
+    }
+
+    .poster-img-mobile{
+        display: block;
+     
+        width: 100dvw;
+    }
+
+    .tpsection2-inner1-mobile{
+        display: flex;
+        width: 75%;
+        align-self: center ;
+        justify-content: center;
+        background-image: url('/images/Adair1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin: 0%;
+        box-shadow: 0px 0px 10px #00000070; 
+        border-radius: 1%;
+        
+    }
+
+
+    .tpsection2-inner2{
+        
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-color: #00000070;
+        box-shadow: 0px 0px 10px #000000;
+        
+    }
+
+    .tpsection2-inner2 p{
+        font-family: monospace;
+        margin: 0%;
+        padding: 15% 10%;
+        font-size: 6vw;
+        line-height: 2;
+       
+    }
+
+    .tpsection2-mobile-btn{  
+        display: block;
+        align-self: center ;
+        padding: 3% 3%;
+        width: 45%;
+        margin: 7% 0% 0% 0%;
+        box-shadow: 0px 0px 10px #ffffff; ;
+        background-color: #00000098;
+        border-style: none;
+        border-radius: 7px;
+        color:aliceblue;
+        cursor: pointer;
+        font-size: 7vw;
+        font-family: 'aereann_2regular', 'Lucida Sans';
+        font-weight: bold;
+        text-shadow: 0px 0px 3px #c5f1ff;
+        letter-spacing: 3vw;
+        transition: 0.5s ease-in-out;
+    }
+
+    .tpsection2-mobile-btn :hover{  
+        background-color: #30303098;
+        text-shadow: 0px 0px 10px #c5f1ff;
+        box-shadow: 0px 0px 20px 5px #ffffff86;
+        transition: 0.8s;
+        
+    }
+    
+    .tpsection2-inner3{
+        margin: 0%;
+        width: 100%;
+        border-radius: 0px;
+        
+    }
+    .tpsection2-inner3 p{
+        font-size: 4vw;
+        padding: 0% 5%;
+        text-shadow: 0px 0px 1px #000000;
+    }
    
+    .tpsection3-inner1 button{
+        width: 8%;
+        margin: 0%;
+        height: 5vh;
+        font-size: 7vw;
+        background: none;
+        box-shadow: none;
+        
+    }
+
+    .tpsection3-inner1 button:hover{
+        box-shadow: none;
+        
+    }
+
+    #right-btn{
+        position: absolute;
+        right: 1%;
+    }
+
+    #left-btn{
+       position: absolute;
+       left: 1%;
+    }
+
+    .tpsection3-p{
+        font-family: monospace;
+        font-size: 4vw;
+        line-height: 2;
+        margin: 5%;
+    }
+    .tpsection3-inner1 img{
+        width: 100%;
+    }
+    .tpsection3-inner2{
+        
+        justify-content: space-evenly;
+
+    }
+    p.dot{
+        font-size: 10vw;
+        line-height: 0.5;
+        letter-spacing: 5.5vw;
+    }
+
+    .tpsection4 video{
+        width: 100%;
+    }
+
+    .tpsection4 p{
+        width: 90%;
+        padding: 0% 5%;
+        text-align: justify;
+        font-size: 4vw;
+    }
 }

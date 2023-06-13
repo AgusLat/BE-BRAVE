@@ -13,7 +13,7 @@
     
 }
 
-ul{
+.footer-ul{
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
@@ -25,7 +25,7 @@ ul{
     align-content: center;
 }
 
-ul li{
+.footer-ul li{
     margin-right: 10%;
     margin-left: 10%;
     display: flex;
@@ -35,7 +35,7 @@ ul li{
     height: 100%;
 }
 
-ul li a{
+.footer-ul li a{
     
     display: flex;
     justify-content: center;

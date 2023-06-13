@@ -12,6 +12,8 @@ import { TPSection2 } from '../TPSection2'
 import { TPSection3 } from '../TPSection3'
 import { TPSection4 } from '../TPSection4'
 import { TASection3 } from '../TASection3'
+import { TASection4 } from '../TASection4'
+import { TASection5 } from '../TASection5'
 
 export const SectionPX = ({id, section}) => {
   return (
@@ -33,6 +35,8 @@ export const SectionPX = ({id, section}) => {
         {id==='1'&& section==="TA" && <TASection1 /> }
         {id==='2'&& section==="TA" && <TASection2 /> }
         {id==='3'&& section==="TA" && <TASection3 /> }
+        {id==='4'&& section==="TA" && <TASection4 />}
+        {id==='5'&& section==="TA" && <TASection5 />}
 
       
     </div>

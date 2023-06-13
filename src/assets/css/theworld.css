@@ -10,10 +10,13 @@
 
 .mask{
     -webkit-mask-image:linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.5019257703081232) 10%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.499124649859944) 90%, rgba(0,0,0,0) 95%);
+    
     mask-image:linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,0.5019257703081232) 10%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.499124649859944) 90%, rgba(0,0,0,0) 95%);
 
     border-radius: 6%;
 }
+
+
 
 img{
     width: 100%;
@@ -42,14 +45,15 @@ img{
 
 .twsection-container{
     display: flex;
-    margin: 5% 0%;
+    margin: 0.5% 0%;
     justify-content: center;
     align-items: center;
     color: aliceblue;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 76px #000000;
     transform: translateZ(-10px) scale(1);
-    font-style: italic;
+    font-style: normal;
 } 
 
 
@@ -59,10 +63,10 @@ img{
 
 .twsection{
     color:aliceblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.68);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 4px #c5f1ff;
     font-size: 1.2vw;
-    width: 70%;
+    width: 80%;
     padding: 2.5%;
     
  
@@ -74,6 +78,34 @@ img{
     text-align: center;
 }
 
+.text-btn{
+    cursor: pointer;
+    font-family: 'aereann_2regular', 'Lucida Sans';
+    border: none;
+    background: #00000000;
+    color: aliceblue;
+    font-size: 1.6vw;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px #c5f1ff;
+    align-self: center;
+    transition: 500ms ease-in-out;
+    margin-bottom: 5%;
+   
+
+}
+
+.text-btn:hover{
+    text-shadow: 0px 0px 15px #c5f1ff;
+    transition: 500ms ease-in-out;
+}
+
+.right-btn{
+    margin-right: 10%;
+}
+
+.left-btn{
+    margin-left: 10%;
+}
 
 .sm-img{
     width: 70%;
@@ -92,17 +124,666 @@ img{
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #00000032;
+    background-color: #000000af;
+    box-shadow: 0px 0px 8px #000000;
     width: 30%;
-    /* height: 55%; */
     top: 20%;
-    /* left: 50%; */
+    height: 60%;
     padding: 0% 1%;
     border-radius: 2%;
+    text-align: justify;
+    }
+
+
+
+
+/* CSS TRANSITION CLASS RIGHT */
+.twTransition-right-appear {
+    opacity: 0;
+    width: 7%;
+    height: 6%;
+    left: 80%;
+}
+
+.twTransition-right-appear-active {
+    opacity: 1;
+    width: 7%;
+    height: 6%;
+    left: 80%;
+    transition: width 1000ms,height 1000ms, left 1000ms, opacity 4000ms;
+}
+
+
+
+.twTransition-right-enter {
+    width: 30%;
+    left: 50%;
+    height: 60%;
+}
+
+.twTransition-right-enter-active {
+    width: 7%;
+    height: 6%;
+    left: 80%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
+}
+
+.twTransition-right-enter-done {
+    width: 7%;
+    height: 6%;
+    left: 80%;
+
+}
+
+.twTransition-right-exit {
+    width: 7%;
+    height: 6%;
+    left: 80%;
+
+
+}
+
+.twTransition-right-exit-active {
+    width: 30%;
+    height: 60%;
+    left: 50%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
     
+}
+
+.twTransition-right-exit-done {
+    width: 30%;
+    height: 60%;
+    left: 50%;
+}
+
+/* P */
+.twTransition-right-appear p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-right-appear-active p{
+    opacity: 0;
+    font-size: 0vw;
+    transition: opacity 500ms, font-size 500ms;
+}
+
+
+
+.twTransition-right-enter p{
+    opacity: 1;
+    font-size: 1.2vw;
+}
+
+.twTransition-right-enter-active p{
+    opacity: 0;
+    font-size: 0vw;
+    transition: opacity 500ms, font-size 500ms;
+}
+
+.twTransition-right-enter-done p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-right-exit p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-right-exit-active p{
+    opacity: 1;
+    font-size: 1.2vw;
+    transition: opacity 4000ms, font-size 1000ms;
+    
+}
+
+.twTransition-right-exit-done p{
+    opacity: 1;
+    font-size: 1.2vw;
+}
+
+/* IMG */
+.twTransition-right-appear img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-right-appear-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-right-enter img{
+    opacity: 1;
+    width: 70%;
+}
+
+.twTransition-right-enter-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-right-enter-done img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-right-exit img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-right-exit-active img{
+    opacity: 1;
+    width: 70%;
+    transition: opacity 4000ms, width 1000ms;
+    
+}
+
+.twTransition-right-exit-done img{
+    opacity: 1;
+    width: 70%;    
+}
+
+
+
+
+
+
+/* CSS TRANSITION CLASS LEFT */
+.twTransition-left-appear {
+    opacity: 0;
+    width: 7%;
+    height: 6%;
+    left: 12%;
+}
+
+.twTransition-left-appear-active {
+    opacity: 1;
+    width: 7%;
+    height: 6%;
+    left: 12%;
+    transition: width 1000ms,height 1000ms, left 1000ms, opacity 4000ms;
+}
+
+.twTransition-left-enter {
+    width: 30%;
+    left: 18%;
+    height: 60%;
+}
+
+.twTransition-left-enter-active {
+    width: 7%;
+    height: 6%;
+    left: 12%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
+}
+
+.twTransition-left-enter-done {
+    width: 7%;
+    height: 6%;
+    left: 12%;
+
+}
+
+.twTransition-left-exit {
+    width: 7%;
+    height: 6%;
+    left: 12%;
+
+
+}
+
+.twTransition-left-exit-active {
+    width: 30%;
+    height: 60%;
+    left: 18%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
+    
+}
+
+.twTransition-left-exit-done {
+    width: 30%;
+    height: 60%;
+    left: 18%;
+}
+
+/* P */
+.twTransition-left-appear p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-left-appear-active p{
+    opacity: 0;
+    font-size: 0vw;
+    transition: opacity 500ms, font-size 500ms;
+}
+
+.twTransition-left-enter p{
+    opacity: 1;
+    font-size: 1.2vw;
+}
+
+.twTransition-left-enter-active p{
+    opacity: 0;
+    font-size: 0vw;
+    transition: opacity 500ms, font-size 500ms;
+}
+
+.twTransition-left-enter-done p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-left-exit p{
+    opacity: 0;
+    font-size: 0vw;
+}
+
+.twTransition-left-exit-active p{
+    opacity: 1;
+    font-size: 1.2vw;
+    transition: opacity 4000ms, font-size 1000ms;
+    
+}
+
+.twTransition-left-exit-done p{
+    opacity: 1;
+    font-size: 1.2vw;
+}
+
+/* IMG */
+.twTransition-left-appear img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-left-appear-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-left-enter img{
+    opacity: 1;
+    width: 70%;
+}
+
+.twTransition-left-enter-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-left-enter-done img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-left-exit img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-left-exit-active img{
+    opacity: 1;
+    width: 70%;
+    transition: opacity 4000ms, width 1000ms;
+    
+}
+
+.twTransition-left-exit-done img{
+    opacity: 1;
+    width: 70%;    
+}
+
+@media screen and (max-width: 480px){
+    .twsection-container{
+        margin: 3% 0%;
+    }
+    .twsection{
+            
+        width: 100%;
+         padding: 0%;
+            
+    }
+
+    .twsection-innerdiv {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            
+        width: 55%;
+        height: 70%;
+        top: 15%;
+        font-size: 1.9vw;
+        padding: 0% 2%;
+        margin: 0%;
+        border-radius: 3px;
+            
+    }
+
+    .left{
+        right: 39%;                
+    }
+            
+    .right{
+        left: 40%;
+    }
+
+    .aereann{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sm-img{
+        width: 60%;
+        padding: 3%;
+    }
+
+    .right-btn{
+        margin-right: 5px;
     }
 
    
 
+    .text-btn{
+        font-size: 2.1vw;
+        margin-top: 0% ;
+        margin-bottom: 5px;
+    }
+
+    /* CSS TRANSITION CLASS */
+    .twTransition-right-appear {
+        opacity: 0;
+        width: 10%;
+        height: 10%;
+        left: 85%;
+    }
+    
+    .twTransition-right-appear-active {
+        opacity: 1;
+        width: 10%;
+        height: 10%;
+        left: 85%;
+        transition: width 1000ms,height 1000ms, left 1000ms, opacity 4000ms;
+    }
+    
+
+    .twTransition-right-enter {
+        width: 55%;
+        height: 70%;
+        left: 40%;
+    }
+
+    .twTransition-right-enter-active {
+        width: 10%;
+        height: 10%;
+        left: 85%;
+        transition: width 1000ms, left 1000ms, height 1000ms;
+    }
+
+    .twTransition-right-enter-done {
+        width: 10%;
+        height: 10%;
+        left: 85%;
+
+    }
+
+    .twTransition-right-exit {
+        width: 10%;
+        height: 10%;
+        left: 85%;
+
+    }
+
+    .twTransition-right-exit-active {
+        width: 55%;
+        height: 70%;
+        left: 40%;
+        transition: width 1000ms, left 1000ms, height 1000ms;
+    
+    }
+
+    .twTransition-right-exit-done {
+        width: 55%;
+        left: 40%;
+    }
+
+/* P */
+
+.twTransition-right-appear p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 0% 0%;
+}
+
+.twTransition-right-appear-active p{
+    opacity: 1;
+    font-size: 0vw;
+    margin: 3% 0%;
+    transition: opacity 500ms, font-size 1000ms;
+}
+
+.twTransition-right-enter p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+}
+.twTransition-right-enter-active p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+    transition: opacity 500ms, font-size 1000ms;
+}
+.twTransition-right-enter-done p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+}
+.twTransition-right-exit p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+}
+.twTransition-right-exit-active p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+    transition: opacity 4000ms, font-size 1000ms;
+}
+
+.twTransition-right-exit-done p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+}
+
+/* IMG */
+.twTransition-right-enter img{
+    opacity: 1;
+    width: 60%;
+}
+
+.twTransition-right-enter-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-right-enter-done img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-right-exit img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-right-exit-active img{
+    opacity: 1;
+    width: 60%;
+    transition: opacity 4000ms, width 1000ms;
+    
+}
+
+.twTransition-right-exit-done img{
+    opacity: 1;
+    width: 60%;    
+}
+
+/* CSS TRANSITION CLASS LEFT */
+.twTransition-left-appear {
+    opacity: 0;
+    width: 10%;
+    height: 10%;
+    left: 2%;
+}
+    
+.twTransition-left-appear-active {
+    opacity: 1;
+    width: 10%;
+    height: 10%;
+    left: 2%;
+    transition: width 1000ms,height 1000ms, left 1000ms, opacity 4000ms;
+}
+
+.twTransition-left-enter {
+    width: 55%;
+    left: 2%;
+    height: 70%;
+}
+
+.twTransition-left-enter-active {
+    width: 10%;
+    height: 10%;
+    left: 2%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
+}
+
+.twTransition-left-enter-done {
+    width: 10%;
+    height: 10%;
+    left: 2%;
+
+}
+
+.twTransition-left-exit {
+    width: 10%;
+    height: 10%;
+    left: 2%;
+
+
+}
+
+.twTransition-left-exit-active {
+    width: 55%;
+    height: 70%;
+    left: 2%;
+    transition: width 1000ms,height 1000ms, left 1000ms;
+    
+}
+
+.twTransition-left-exit-done {
+    width: 55%;
+    height: 70%;
+    left: 2%;
+}
+
+/* P */
+.twTransition-left-appear p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+}
+
+.twTransition-left-appear-active p{
+    opacity: 1;
+    font-size: 0vw;
+    margin: 3% 0%;
+    transition: opacity 500ms, font-size 1000ms;
+}
+
+.twTransition-left-enter p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+}
+
+.twTransition-left-enter-active p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+    transition: opacity 500ms, font-size 500ms;
+}
+
+.twTransition-left-enter-done p{
+    opacity: 0;
+    font-size: 0vw;
+    margin: 3% 0%;
+}
+
+.twTransition-left-exit p{
+    opacity: 0;
+    font-size: 0vw;  
+    margin: 3% 0%;
+}
+
+.twTransition-left-exit-active p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+    transition: opacity 4000ms, font-size 1000ms;    
+}
+
+.twTransition-left-exit-done p{
+    opacity: 1;
+    font-size: 1.9vw;
+    margin: 3% 0%;
+}
+
+
+/* IMG */
+.twTransition-left-enter img{
+    opacity: 1;
+    width: 60%;
+}
+
+.twTransition-left-enter-active img{
+    opacity: 0;
+    width: 1%;
+    transition: opacity 500ms, width 500ms;
+}
+
+.twTransition-left-enter-done img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-left-exit img{
+    opacity: 0;
+    width: 1%;
+}
+
+.twTransition-left-exit-active img{
+    opacity: 1;
+    width: 60%;
+    transition: opacity 4000ms, width 1000ms;
+    
+}
+
+.twTransition-left-exit-done img{
+    opacity: 1;
+    width: 60%;    
+}
+}

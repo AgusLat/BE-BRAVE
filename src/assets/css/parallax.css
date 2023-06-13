@@ -54,6 +54,10 @@
   z-index: -1;
 }
 
+#background-img{
+    transform: translateY(2%)
+}
+
 
 
 
@@ -69,7 +73,7 @@
 /* SECTION COMPONENT */
 .sections-container{
     display: flex;
-    margin: 5% 0%;
+    margin: 0% 0%;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -116,19 +120,64 @@
 /* MODIFICAR EN TODAS LAS RESOLUCIONES CON LOS MEDIA QUERIES */
 @media screen and (max-width: 480px){
     .background-container{
+        width: auto;
         transform: translateZ(-15px) scale(4);
+    }
+
+    .the-world-main .background-container:first-child{
+        height: 620px;
+    }
+
+    .the-process-main .background-container{
+        transform: translateZ(-15px) scale(7.5);
+    }
+    .the-process-main .background-container:first-child{
+        height: 135px;
+      
+    }
+
+    .the-author-main .background-container{
+        transform: translateZ(-15px) scale(7.5);
+    }
+    .the-author-main .background-container:first-child{
+        height: 315px;
     }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
     .background-container{
-        transform: translateZ(-20px) scale(4);
+        transform: translateZ(-20px) scale(3.7);
     }
+
+    .the-world-main .background-container:first-child{
+        height: 855px;
+    }
+
+    .the-process-main .background-container:first-child{
+        height: 595px;
+    }
+
+    .the-author-main .background-container:first-child{
+        height: 430px;
+    }
+
+    
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
     .background-container{
         transform: translateZ(-20px) scale(2.85);
+    }
+    .the-world-main .background-container:first-child{
+        height: 960px;
+    }
+
+    .the-process-main .background-container:first-child{
+        height: 425px;
+    }
+
+    .the-author-main .background-container:first-child{
+        height: 430px;
     }
 }
 
@@ -136,10 +185,52 @@
     .background-container{
         transform: translateZ(-20px) scale(2.85);
     }
+
+    .the-world-main .background-container:first-child{
+        height: 1300px;
+    }
+
+    .the-process-main .background-container:first-child{
+        height: 570px;
+    }
+
+    .the-author-main .background-container:first-child{
+        height: 840px;
+    }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1201px){
     .background-container{
         transform: translateZ(-20px) scale(2.85);
+    }
+
+    .the-world-main .background-container:first-child{
+        height: 1530px;
+    }
+
+    .the-process-main .background-container:first-child{
+        height: 670px;
+    }
+
+    .the-author-main .background-container:first-child{
+        height: 1130px;
+    }
+}
+
+@media screen and (min-width: 1441px){
+    .background-container{
+        transform: translateZ(-20px) scale(2.85);
+    }
+
+    .the-world-main .background-container:first-child{
+        height: 2200px;
+    }
+
+    .the-process-main .background-container:first-child{
+        height: 1055px;
+    }
+
+    .the-author-main .background-container:first-child{
+        height: 1600px;
     }
 }

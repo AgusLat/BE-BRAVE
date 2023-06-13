@@ -8,7 +8,51 @@
 
 }
 
+
+
+.mobile-nav{
+    display: none;
+    flex-direction:column ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: rgb(28, 27, 27);
+
+
+}
+
+.mobile-nav-list{
+    display: flex;
+    position: relative;
+    flex-direction:column ;
+    opacity: 0;
+    height: 0vh;
+    z-index: 1;
+}
+
+.navbar-link-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.menu-icon{
+    width: 25px;
+    margin: 8px 8px;
+    z-index: 20;
+}
+
 .navbar-link{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    width: 10%;
+}
+
+.navbar-contact-link{
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -36,8 +80,9 @@
 }
 
 .navbar-btn:hover{
+    
     cursor: pointer;
-    width: fit-content;
+    width: 100%;
     padding: 7%;
     border-style: none;
     padding-top: 7%;
@@ -52,7 +97,7 @@
 
 .navbar-btn-active{
    
-    width: fit-content;
+    width: 100%;
     padding: 7%;
     border-style: none;
     padding-top: 7%;
@@ -93,4 +138,85 @@
 
 #lang-btn:hover{
     text-shadow: 0px 0px 8px #c5f1ffc4
+}
+
+.hide-on-mobile{
+    display: flex;
+    
+}
+
+@media screen and (max-width: 480px){
+
+    .mobile-nav{
+        display: flex;
+    }
+
+    .hide-on-mobile{
+        display: none;
+        
+    }
+
+    .navbar-contact-link{
+        width: 25%;
+    }
+
+    .navbar-btn{
+        text-align: left;
+        margin-left: 10%;
+
+    }
+
+    .navbar-btn:hover{
+        text-align: left;
+        margin-left: 0%;
+    }
+    .navbar-btn-active{
+        text-align: left;
+        margin-left: 0%;
+        width: auto;
+    }
+
+
+    #lang-btn{
+        width: 20%;
+    }
+
+    /* MENU TRANSITION */
+
+    .menu-transition-enter{
+        opacity: 1;
+        height: 140px;
+        top: 0px;
+    }
+    .menu-transition-enter-active{
+        opacity: 0;
+        height: 0px;
+        top: -200px;
+        transition: opacity 200ms, height 400ms, top 400ms;
+    }
+    .menu-transition-enter-done{
+        opacity: 0;
+        top: -200px;
+        height: 0px;
+    }   
+
+    .menu-transition-exit{
+        opacity: 0;
+        height: 0px;
+        top: -200px;
+
+
+    }
+    .menu-transition-exit-active{
+        opacity: 1;
+        height: 140px;
+        top: 0px;
+        transition: opacity 200ms, height 400ms, top 400ms;
+    }
+    .menu-transition-exit-done{
+        opacity: 1;
+        height: 140px;
+        top: 0px;
+    }
+
 }

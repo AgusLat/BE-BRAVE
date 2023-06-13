@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ import TheAuthor from './containers/TheAuthor'
 import BeBrave from './containers/BeBrave'
 import LangContextProvider from './context/langContext'
 
-const router = createBrowserRouter([    //`Router` elements array
+const router = createHashRouter([    //`Router` elements array
   {
     element:<Root />,
     path:"/",

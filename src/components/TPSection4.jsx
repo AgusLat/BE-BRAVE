@@ -11,10 +11,11 @@ export const TPSection4 = () => {
 
     <div className='tpsection-container'>
       <div className='tpsection4'>
-        <p>{language==='es'?'La idea de animar las ilustraciones se generó en mitad del proyecto':'The idea of​​ animating the illustrations came up in the middle of the project.'}</p>
+      
         <video controls autoPlay preload='auto'>
             <source src={video1} type='video/mp4'/>
         </video>
+        <p>{language==='es'?'La idea de animar las ilustraciones se generó en mitad del proyecto. Entre ilustraciones y texto, hay un total de 70 videos.':'The idea of​​ animating the illustrations came up in the middle of the project. Between illustrations and text, there is a total of 70 videos.'}</p>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import '../assets/css/navbutton.css'
 
 
 
-export default function NavButton( {name, route} ) {
+export default function NavButton( {name, route, classProp} ) {
 
 /**
  * Changes navbar buttons class on click.
@@ -25,7 +25,7 @@ const activeBtnEffect = (e)=>{
 
   return (
     <>
-      <Link className='navbar-link'  to={route}>
+      <Link className={classProp}  to={route}>
         <button className='navbar-btn' onClick={ activeBtnEffect } >
         {name}
         </button>
